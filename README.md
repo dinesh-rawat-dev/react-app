@@ -1,6 +1,6 @@
 # Learning reactjs
 
-[![N|Solid](http://img.crx4chrome.com/4f/46/55/jaaklebbenondhkanegppccanebkdjlh-icon.png)](https://facebook.github.io/react/)
+[![N|Solid](https://facebook.github.io/react/)]
 
 React created interactive UIs. It creates encapsulated views for the react application that manages their own state.
 
