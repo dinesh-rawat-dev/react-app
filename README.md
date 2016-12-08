@@ -1,12 +1,13 @@
 # Learning reactjs
 
-[![N|Solid](https://facebook.github.io/react/)]
+[![N|Solid](http://img.crx4chrome.com/4f/46/55/jaaklebbenondhkanegppccanebkdjlh-icon.png)](https://facebook.github.io/react/)
 
 React created interactive UIs. It creates encapsulated views for the react application that manages their own state.
 
 ### Branches
-* [Lesson1-setup] - How to setup a simple react app
-* ..  coming soon
+* [Lesson1-setup] - How to setup a simple react app (https://github.com/dinesh-rawat/react-app/tree/setup)
+* .. coming soon
+
 
 ### Installation
 Install the dependencies and devDependencies and start the server.
