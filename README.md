@@ -5,7 +5,7 @@
 React created interactive UIs. It creates encapsulated views for the react application that manages their own state.
 
 ### Branches
-* [Lesson1-setup] - How to setup a simple react app
+* [Lesson1-setup] - How to setup a simple react app (https://github.com/dinesh-rawat/react-app/tree/setup)
 * .. coming soon
 
 And of course Dillinger itself is open source with a [public repository][dill]
