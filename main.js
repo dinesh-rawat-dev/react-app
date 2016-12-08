@@ -3,6 +3,8 @@ import ReactDom from 'react-dom';
 import App from './App';
 
 ReactDom.render(
-    <App />,
+    <div>
+        <App user='Dinesh'>I am a child</App>
+    </div>,
     document.getElementById('mainContent')
 );
