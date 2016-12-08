@@ -51,8 +51,11 @@ ReactDom.render(
 ```
 ### Accessing passing parameters along with components
 ```sh
-{this.props.user}
-{this.props.food}
+class App extends React.Component {
+    render() {
+        return <div> {this.props.user} loves eating {this.props.food} </div>
+    }
+}
 ```
 
 {} braces are used to access the properties.
