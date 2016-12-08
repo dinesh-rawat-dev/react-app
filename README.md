@@ -8,9 +8,6 @@ React created interactive UIs. It creates encapsulated views for the react appli
 * [Lesson1-setup] - How to setup a simple react app
 * ..  coming soon
 
-And of course Dillinger itself is open source with a [public repository][dill]
- on GitHub.
-
 ### Installation
 Install the dependencies and devDependencies and start the server.
 
