@@ -14,8 +14,16 @@ Anything, that is wrapped inside an opening and closing tag is a children.
 
 ### Accessing passing parameters along with components
 ```sh
-{this.props.user}
-{this.props.children}
+class App extends React.Component {
+    render() {
+        return (
+            <div>
+                <h3> {this.props.user} </h3>
+                <p> {this.props.children} </p>
+            </div>
+        )
+    }
+}
 ```
 
 {} braces are used to access the properties.
