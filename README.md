@@ -1,37 +1,41 @@
-# Learning reactjs
+# Learning reactjs - Children
 
 [![N|Solid](http://img.crx4chrome.com/4f/46/55/jaaklebbenondhkanegppccanebkdjlh-icon.png)](https://facebook.github.io/react/)
 
 React created interactive UIs. It creates encapsulated views for the react application that manages their own state.
 
-### Branches
-* [Lesson1-setup] - How to setup a simple react app (https://github.com/dinesh-rawat/react-app/tree/Lesson1-setup)
-  * React Development Environment Setup
-* .. coming soon
-
-### Installation
-Install the dependencies and devDependencies and start the server.
+### Events
+Till now are worked with render some HTML on the page. We start react to create dynamic or changing components to which the user can interact. Lets do something interactive. Ex:
 
 ```sh
-$ cd react
-$ npm install
-$ npm start
+ReactDom.render(
+    <div>
+        <App user='Dinesh'>This guy is awesome!</App>
+    </div>,
+    document.getElementById('mainContent')
+);
 ```
+### Clicking on an anchor tag
 
-### Plugins
-* react
-* react-dom
-* babel and loader
-    * babel-core
-    * babel-loader
-    * babel-preset-es2015
-    * babel-preset-react
-* webpack and webpack-dev-server
-
-License
-----
-
-MIT
-
-
-**Free Software, Hell Yeah!**
+```sh
+import React from 'react';
+class App extends React.Component {
+    constructor(props) {
+        super(props);
+        // necessary to make `this` work in the callback
+        this.handleClick = this.handleClick.bind(this);
+    }
+    handleClick() {
+        console.log(this.props.children);
+    }
+    render() {
+        return (
+            <div>
+                <h3>{this.props.user}</h3>
+                <a onClick={this.handleClick}>Click me</a>
+            </div>
+        )
+    }
+}
+export default App;
+```
