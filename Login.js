@@ -1,6 +1,6 @@
 import React from 'react';
 
-class App extends React.Component {
+class Login extends React.Component {
     constructor(props) {
         super(props);
 
@@ -11,14 +11,14 @@ class App extends React.Component {
         console.log(this.props.children);
     }
     render() {
-        console.log('========1======');
+        console.log('=======2=======');
         return (
             <div>
                 <h3>{this.props.user}</h3>
-                <a onClick={this.handleClick}>Click me1</a>
+                <a onClick={this.handleClick}>Click me2</a>
             </div>
         )
     }
 }
 
-export default App;
+export default Login;

@@ -1,10 +1,9 @@
 import React from 'react';
 import ReactDom from 'react-dom';
-import App from './App';
+import {Router, Route, browserHistory, IndexRoute} from 'react-router';
+import routes from './routes.js';
 
 ReactDom.render(
-    <div>
-        <App user='Dinesh'>This guy is awesome!</App>
-    </div>,
+    <Router history={browserHistory} routes={routes} />,
     document.getElementById('mainContent')
 );
