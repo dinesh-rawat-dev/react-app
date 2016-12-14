@@ -5,10 +5,17 @@
 React created interactive UIs. It creates encapsulated views for the react application that manages their own state.
 
 ### Branches
-* [Lesson1-setup] - How to setup a simple react app (https://github.com/dinesh-rawat/react-app/tree/Lesson1-setup)
-* .. coming soon
-
-
+* [Lesson1-setup] - How to setup a simple react app? 
+    (https://github.com/dinesh-rawat/react-app/tree/Lesson1-setup).
+* [Lesson2-multiple-components-properties] - How to use multiple components and passing properties?
+    (https://github.com/dinesh-rawat/react-app/tree/Lesson2-multiple-components-properties).
+* [Lesson3-children] - What are and how to access childrens? 
+    (https://github.com/dinesh-rawat/react-app/tree/Lesson3-children).
+* [Lesson4-Events] - events? 
+    (https://github.com/dinesh-rawat/react-app/tree/Lesson4-Events).
+* [Lesson5-react-routing] - how to user react-routing? 
+    (https://github.com/dinesh-rawat/react-app/tree/Lesson5-react-routing).
+    
 ### Installation
 Install the dependencies and devDependencies and start the server.
 
