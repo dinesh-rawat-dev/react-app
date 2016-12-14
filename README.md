@@ -5,7 +5,7 @@
 React created interactive UIs. It creates encapsulated views for the react application that manages their own state.
 
 ### Events
-Till now, we worked with render some HTML on the page. We start react to create dynamic or changing components to which the user can interact. Lets do something interactive. Ex:
+Till now, we learnt how to render some HTML on the page. We start react to create dynamic or changing components to which the user can interact. Lets do something interactive. Ex:
 
 ```sh
 ReactDom.render(
