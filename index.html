@@ -1,107 +1,67 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-us">
   <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
+    <meta charset="UTF-8">
+    <title>React-app by dinesh-rawat</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
     <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
-
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-
-    <title>React-app by dinesh-rawat</title>
   </head>
-
   <body>
-    <header>
-      <div class="inner">
-        <h1>React-app</h1>
-        <h2>Learning react js</h2>
-        <a href="https://github.com/dinesh-rawat/react-app" class="button"><small>View project on</small> GitHub</a>
-      </div>
-    </header>
+    <section class="page-header">
+      <h1 class="project-name">React-app</h1>
+      <h2 class="project-tagline">Learning react js</h2>
+      <a href="https://github.com/dinesh-rawat/react-app" class="btn">View on GitHub</a>
+      <a href="https://github.com/dinesh-rawat/react-app/zipball/master" class="btn">Download .zip</a>
+      <a href="https://github.com/dinesh-rawat/react-app/tarball/master" class="btn">Download .tar.gz</a>
+    </section>
 
-    <div id="content-wrapper">
-      <div class="inner clearfix">
-        <section id="main-content">
-          <h1>
-<a id="learning-reactjs" class="anchor" href="#learning-reactjs" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Learning reactjs</h1>
+    <section class="main-content">
+      <h1>
+<a id="learning-reactjs---children" class="anchor" href="#learning-reactjs---children" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Learning reactjs - Children</h1>
 
 <p><a href="https://facebook.github.io/react/"><img src="http://img.crx4chrome.com/4f/46/55/jaaklebbenondhkanegppccanebkdjlh-icon.png" alt="N|Solid"></a></p>
 
 <p>React created interactive UIs. It creates encapsulated views for the react application that manages their own state.</p>
 
 <h3>
-<a id="branches" class="anchor" href="#branches" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Branches</h3>
+<a id="routing" class="anchor" href="#routing" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Routing</h3>
 
-<ul>
-<li>[Lesson1-setup] - How to setup a simple react app? 
-(<a href="https://github.com/dinesh-rawat/react-app/tree/Lesson1-setup">https://github.com/dinesh-rawat/react-app/tree/Lesson1-setup</a>).</li>
-<li>[Lesson2-multiple-components-properties] - How to use multiple components and passing properties?
-(<a href="https://github.com/dinesh-rawat/react-app/tree/Lesson2-multiple-components-properties">https://github.com/dinesh-rawat/react-app/tree/Lesson2-multiple-components-properties</a>).</li>
-<li>[Lesson3-children] - What are and how to access childrens? 
-(<a href="https://github.com/dinesh-rawat/react-app/tree/Lesson3-children">https://github.com/dinesh-rawat/react-app/tree/Lesson3-children</a>).</li>
-<li>[Lesson4-Events] - events? 
-(<a href="https://github.com/dinesh-rawat/react-app/tree/Lesson4-Events">https://github.com/dinesh-rawat/react-app/tree/Lesson4-Events</a>).</li>
-<li>[Lesson5-react-routing] - how to user react-routing? 
-(<a href="https://github.com/dinesh-rawat/react-app/tree/Lesson5-react-routing">https://github.com/dinesh-rawat/react-app/tree/Lesson5-react-routing</a>).</li>
-</ul>
+<div class="highlight highlight-source-shell"><pre>import React from <span class="pl-s"><span class="pl-pds">'</span>react<span class="pl-pds">'</span></span><span class="pl-k">;</span>
+import ReactDom from <span class="pl-s"><span class="pl-pds">'</span>react-dom<span class="pl-pds">'</span></span><span class="pl-k">;</span>
+import {Router, Route, browserHistory, IndexRoute} from <span class="pl-s"><span class="pl-pds">'</span>react-router<span class="pl-pds">'</span></span><span class="pl-k">;</span>
+import routes from <span class="pl-s"><span class="pl-pds">'</span>./routes.js<span class="pl-pds">'</span></span><span class="pl-k">;</span>
+
+ReactDom.render(
+    <span class="pl-k">&lt;</span>Router <span class="pl-c1">history</span>={browserHistory} routes={routes} /<span class="pl-k">&gt;</span>,
+    document.getElementById(<span class="pl-s"><span class="pl-pds">'</span>mainContent<span class="pl-pds">'</span></span>)
+)<span class="pl-k">;</span>
+</pre></div>
 
 <h3>
-<a id="installation" class="anchor" href="#installation" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Installation</h3>
+<a id="routesjs" class="anchor" href="#routesjs" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>routes.js</h3>
 
-<p>Install the dependencies and devDependencies and start the server.</p>
+<div class="highlight highlight-source-shell"><pre>import React from <span class="pl-s"><span class="pl-pds">'</span>react<span class="pl-pds">'</span></span>
+import App from <span class="pl-s"><span class="pl-pds">'</span>./App<span class="pl-pds">'</span></span>
+import Login from <span class="pl-s"><span class="pl-pds">'</span>./Login<span class="pl-pds">'</span></span>
+import {Route} from <span class="pl-s"><span class="pl-pds">'</span>react-router<span class="pl-pds">'</span></span><span class="pl-k">;</span>
 
-<div class="highlight highlight-source-shell"><pre>$ <span class="pl-c1">cd</span> react
-$ npm install
-$ npm start</pre></div>
+<span class="pl-k">export</span> default (
+    <span class="pl-k">&lt;</span>Route<span class="pl-k">&gt;</span>
+        <span class="pl-k">&lt;</span>Route path=<span class="pl-s"><span class="pl-pds">'</span>/login<span class="pl-pds">'</span></span> component={Login}/<span class="pl-k">&gt;</span>
+        <span class="pl-k">&lt;</span>Route path=<span class="pl-s"><span class="pl-pds">'</span>/<span class="pl-pds">'</span></span> component={App} /<span class="pl-k">&gt;</span>
+    <span class="pl-k">&lt;</span>/Route<span class="pl-k">&gt;</span>
+)<span class="pl-k">;</span></pre></div>
 
-<h3>
-<a id="plugins" class="anchor" href="#plugins" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Plugins</h3>
+      <footer class="site-footer">
+        <span class="site-footer-owner"><a href="https://github.com/dinesh-rawat/react-app">React-app</a> is maintained by <a href="https://github.com/dinesh-rawat">dinesh-rawat</a>.</span>
 
-<ul>
-<li>react</li>
-<li>react-dom</li>
-<li>babel and loader
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
+      </footer>
 
-<ul>
-<li>babel-core</li>
-<li>babel-loader</li>
-<li>babel-preset-es2015</li>
-<li>babel-preset-react</li>
-</ul>
-</li>
-<li>webpack and webpack-dev-server</li>
-</ul>
-
-<h2>
-<a id="license" class="anchor" href="#license" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>License</h2>
-
-<p>MIT</p>
-
-<p><strong>Free Software, Hell Yeah!</strong></p>
-        </section>
-
-        <aside id="sidebar">
-          <a href="https://github.com/dinesh-rawat/react-app/zipball/master" class="button">
-            <small>Download</small>
-            .zip file
-          </a>
-          <a href="https://github.com/dinesh-rawat/react-app/tarball/master" class="button">
-            <small>Download</small>
-            .tar.gz file
-          </a>
-
-          <p class="repo-owner"><a href="https://github.com/dinesh-rawat/react-app"></a> is maintained by <a href="https://github.com/dinesh-rawat">dinesh-rawat</a>.</p>
-
-          <p>This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the Architect theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.</p>
-        </aside>
-      </div>
-    </div>
+    </section>
 
   
   </body>
